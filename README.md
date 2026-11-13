@@ -1,4 +1,6 @@
-# CYD 小さな窓 / tiny-window
+# Tiny Window for CYD — Desktop Pixel Window Case (ESP32-2432S028)
+
+（CYD 小さな窓 / tiny-window）
 
 ESP32 Cheap Yellow Display（**ESP32-2432S028**）向けの、卓上「小さな窓」ファームウェアです。家のない幻想的な湖景が、時間帯と天気で移ろいます。
 
