@@ -6,6 +6,11 @@ A desktop “tiny window” firmware for the ESP32 Cheap Yellow Display (**ESP32
 
 ![tiny-window scene](docs/tiny-window.gif)
 
+実機の例（アクリルの筆塗り。この配色は一例です） / A finished example, brush-painted with acrylic (this colour scheme is only an example):
+
+![実機・斜め](docs/real-angle.jpg)
+![実機・正面](docs/real-front.jpg)
+
 - ファームウェア版 / Firmware: **tiny-window 0.1.4**
 - ケース（3Dプリント） / Case: MakerWorld に公開予定（URL は後で追記します / **TODO: add MakerWorld URL**）
 - ライセンス / License: [CC BY-NC-SA 4.0](LICENSE)（第三者が提供するライブラリは各ライセンス。詳しくは [THIRD_PARTY.md](THIRD_PARTY.md)）
