@@ -1,0 +1,17 @@
+# Build and editor
+.pio/
+.vscode/
+.idea/
+*.elf
+*.map
+dist/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.DS_Store
+*.swp
+*~
+
+# Local uploads / scratch
+uploads/

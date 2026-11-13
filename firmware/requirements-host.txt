@@ -1,0 +1,5 @@
+# Host tools used to compile and to assemble flash images.
+# PlatformIO still uses its own pinned tool-esptoolpy 4.5.1 to *build* .bin images.
+# Flash and merge of artifacts used esptool 5.6.0 as requested.
+platformio==6.1.18
+esptool==5.6.0

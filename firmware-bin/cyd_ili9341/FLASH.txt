@@ -1,0 +1,24 @@
+tiny-window 0.1.4 — esptool flash notes (ESP32, DIO, 40 MHz, 4MB)
+
+Replace PORT with your serial device (/dev/cu.usbserial-XXXX on macOS, COMx on Windows).
+
+Keep Wi-Fi settings (app only, recommended for updates):
+  esptool --chip esp32 --port PORT --baud 460800 \
+    --before default-reset --after hard-reset \
+    write-flash --flash-mode dio --flash-freq 40m --flash-size 4MB \
+    0x10000 firmware.bin
+
+Full flash for a new board or partition changes (may erase NVS):
+  esptool --chip esp32 --port PORT --baud 460800 \
+    --before default-reset --after hard-reset \
+    write-flash --flash-mode dio --flash-freq 40m --flash-size 4MB \
+    0x1000 bootloader.bin \
+    0x8000 partitions.bin \
+    0xe000 boot_app0.bin \
+    0x10000 firmware.bin
+
+Or write the merged image at 0x0 (may also erase NVS):
+  esptool --chip esp32 --port PORT --baud 460800 \
+    --before default-reset --after hard-reset \
+    write-flash --flash-mode dio --flash-freq 40m --flash-size 4MB \
+    0x0 merged.bin
