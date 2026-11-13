@@ -27,7 +27,7 @@ A desktop “tiny window” firmware for the ESP32 Cheap Yellow Display (**ESP32
 
 ### 対応基板
 
-- **ESP32-2432S028**（いわゆる CYD / Cheap Yellow Display）
+- **ESP32-2432S028**（いわゆる CYD / Cheap Yellow Display）。購入例: https://www.aliexpress.com/item/1005007774435209.html（**2 ポート（microUSB + USB-C）版を選ぶ**）
 - 作者の個体は 2 ポート（microUSB + USB-C）、LCD は **ILI9341**、書き込み用の既定プロファイルは `cyd_ili9341`
 - 同じ型番でも LCD コントローラや色順に版差があります。色がおかしいときは `firmware/platformio.ini` の他プロファイル（`cyd_ili9341_inv` / `cyd_ili9342` / `cyd_st7789_*`）を試してください
 
@@ -132,7 +132,7 @@ The firmware draws a house-less lake view and does not draw an on-screen window 
 
 ### Supported board
 
-- **ESP32-2432S028** (CYD / Cheap Yellow Display)
+- **ESP32-2432S028** (CYD / Cheap Yellow Display). Purchase example: https://www.aliexpress.com/item/1005007774435209.html (choose the 2-port microUSB + USB-C version)
 - The author’s unit is the dual-USB (microUSB + USB-C) variant with an **ILI9341** panel. The default flash profile is `cyd_ili9341`
 - LCD controller and colour order can differ between batches of the same part number. If colours look wrong, try the other environments in `firmware/platformio.ini` (`cyd_ili9341_inv`, `cyd_ili9342`, `cyd_st7789_*`)
 
